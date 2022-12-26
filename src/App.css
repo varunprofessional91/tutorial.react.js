@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Calibri, serif;
+    font-size: 1rem;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+body {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+*:focus {
+    outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+button:hover, input[type="button"] {
+    cursor: pointer;
+}
+
+.bodyContainer {
+    background-color: rgba(223, 226, 197, 0.2);
+    margin: -1px auto auto auto;
+    width: 40vw;
+    min-width: 500px;
+    min-height: 92vh;
+    height: auto;
+    padding: 20px;
+}
+
+.headerClass {
+    height: 55px;
+    background-color: rgba(20, 6, 59, 0.6);
+    border-bottom: 3px solid rgba(20, 6, 59, .3);
+}
+
+.headerButtons, .menuButtonsList {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.menuButtonsList {
+    min-width: 350px;
+    /*width: 100vw;*/
+    /*margin: auto auto;*/
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+}
+
+.headerButtons {
+    word-wrap: break-word;
+    word-break: break-all;
+    margin: 11px 5px;
+    color: rgba(20, 6, 59, 0.8);
+    min-width: 90px;
+    padding: 0 7px;
+    height: 33px;
+    border-radius: 3px;
+    border: transparent;
+    background-color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+}
+
+.headerButtons:hover {
+    cursor: pointer;
+    background: linear-gradient(to bottom,
+    rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8));
+    color: rgba(20, 6, 59, 0.8);
+}
+
+nav ul * {
+    list-style: none;
+    text-decoration: inherit !important;
+}
+
+.boxContainer {
+    margin: 20px auto;
+    text-align: center;
+}
+
+input {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 10px;
+    width: 200px;
+    height: 35px;
+    border-radius: 3px;
+}
+
+.btnClass, input[type="submit"] {
+    padding: 0;
+    height: 35px;
+    color: white;
+    background-color: rgba(20, 6, 59, 0.8);
+    border: none;
+    width: 80px;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background: linear-gradient(rgb(20, 6, 59, 0.8),
+    rgba(20, 6, 59, 0.6));
+    color: white;
+}
+
+input[type="text"] {
+    border: 2px solid rgba(5, 5, 5, .6);
+}
+
+input[type="text"]:hover {
+    border: 2px solid rgba(5, 5, 5, 0.2);
+}
+
+.ApiFormContainer {
+    margin-top: 70px;
+}
+
+.FormInputBox {
+    width: 150px;
+    padding: 15px 35px 16px 15px;
+    border: 1px solid rgba(82, 82, 82, 0.5);
+    font-size: 16px;
+    background: url(/public/img/search.svg) no-repeat;
+    background-color: white !important;
+    color: #444 !important;
+    background-position: 94% 54%;
+    background-size: 17px;
+    opacity: 0.7;
+}
+
+.FormInputBox:focus {
+    border: 1px solid rgba(17, 100, 77, 1);
+}
+
+.FormSubmitButton {
+    /*margin: 11px 9px;*/
+    color: white;
+    min-width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    border: 3px solid white;
+    background-color: rgba(20, 6, 59, 0.7);
+    padding: 0 5px;
+}
+
+.FormSubmitButton:hover {
+    cursor: pointer;
+    color: white;
+    min-width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 0 6px;
+    border: 3px solid white;
+    background: linear-gradient(rgb(20, 6, 59, 0.8),
+    rgba(20, 6, 59, 0.6));
+}
+
+textarea {
+    width: 400px;
+    height: 200px;
+}
+
+.ReactListsStyles {
+    font-size: 24px;
+    background-color: greenyellow;
+    color: red;
+    font-weight: bold;
+}
+
+.OutputPrint {
+    margin: auto auto;
+    display: none;
+    border: 4px solid rgba(255, 255, 255, 0.1);
+    /*border: 4px solid rgb(20, 6, 59, .1);*/
+    border-radius: 50%;
+    border-top: 4px solid rgb(20, 6, 59, .8);
+    border-right: 4px solid rgb(20, 6, 59, .8);
+    /*border-bottom: 4px solid rgb(20, 6, 59,1);*/
+    width: 20px;
+    height: 20px;
+    -webkit-animation: spin 1s linear infinite; /* Safari */
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.ComponentContainer {
+    margin: auto auto;
+    min-height: 130px;
+    border: 1px solid black;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+.ComponentTitle {
+    font-size: 1.06rem;
+    border-bottom: 2px solid black;
+    padding: 5px 0 6px 0;
+    margin-bottom: 5px;
+}
